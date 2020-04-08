@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">advancedView</string>
+    <string name="welcome">환영합니다.</string>
+    <string name="getdata">입력문자가져오기</string>
+    <string name="setdata">문자열 세팅하기</string>
+    <string name="send">전송</string>
+    <string name="close">닫기</string>
+    <string name="btn_login">로그인</string>
+    <string name="btn_enroll">회원가입</string>
+    <string name="btn_detail">상세정보</string>
+</resources>

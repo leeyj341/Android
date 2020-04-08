@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SMSExamActivity"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:scrollbars="vertical"
+        android:background="@drawable/line"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+    <TextView
+        android:id="@+id/showbyte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="바이트 수"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+        <Button
+            android:id="@+id/btnsend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

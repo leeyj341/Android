@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFEB3B"
+        android:stretchColumns="0,1,2">
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/btn_login" />
+
+            <Button
+                android:id="@+id/btnsignup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/btn_enroll" />
+
+            <Button
+                android:id="@+id/btninfo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/btn_detail" />
+        </TableRow>
+    </TableLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/frame1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#009688"
+            android:visibility="visible">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="로그인"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="14pt" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="id"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BUTTON"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/frame2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#4CAF50"
+            android:visibility="invisible">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="회원가입"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="14pt" />
+            <EditText
+                android:id="@+id/infoname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Name"/>
+            <EditText
+                android:id="@+id/infoid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="id"/>
+            <EditText
+                android:id="@+id/infopass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="password"/>
+            <Button
+                android:id="@+id/btnenroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BUTTON"/>
+            <TextView
+                android:id="@+id/infotxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/frame3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#8BC34A"
+            android:visibility="invisible">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="회원정보"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="14pt" />
+            <ImageView
+                android:id="@+id/userimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gong"/>
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="공유"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -16,7 +16,8 @@ public class MainActivity extends AppCompatActivity {
         Log.d("test", "onCreate호출");
         setContentView(R.layout.activity_main);
     }
-
+    //onCreate 다음으로 호출되는 메서드
+    //-(액티비티가 실행 : 2단, pause상태에 빠져나올때는 onStart가 호출)
     @Override
     protected void onStart() {
         super.onStart();
@@ -28,24 +29,27 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         Log.d("test", "onResume()호출");
     }
-
+    //일시정지 상태로 바뀔 때 호출되는 메서드
     @Override
     protected void onPause() {
         super.onPause();
         Log.d("test", "onPause()호출");
     }
+    //일시정지나 종료 상태로 바뀔 때 onPause다음으로 호출
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("test", "onStop()호출");
+    }
 
+    //앱이 종료될 때 호출되는 메서드
     @Override
     protected void onDestroy() {
         super.onDestroy();
         Log.d("test", "onDestroy()호출");
     }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Log.d("test", "onStop()호출");
-    }
+
 
 
 

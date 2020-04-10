@@ -1,0 +1,2 @@
+rootProject.name='DataManagermentPro'
+include ':app'

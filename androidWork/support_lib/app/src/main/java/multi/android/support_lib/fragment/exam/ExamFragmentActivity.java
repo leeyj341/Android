@@ -19,9 +19,9 @@ public class ExamFragmentActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_pager_main);
+        setContentView(R.layout.linear02);
 
-        Button btn1 = findViewById(R.id.button);
+        /*Button btn1 = findViewById(R.id.button);
         Button btn2 = findViewById(R.id.button2);
         Button btn3 = findViewById(R.id.button3);
 
@@ -42,14 +42,14 @@ public class ExamFragmentActivity extends AppCompatActivity {
             public void onClick(View v) {
                 changeFragment("third");
             }
-        });
+        });*/
 
 
     }
 
     public void changeFragment(String name) {
         FragmentManager manager = getSupportFragmentManager();
-
+        //프래그먼트의 변화를 관리하는 객체
         FragmentTransaction transaction = manager.beginTransaction();
 
         switch (name) {

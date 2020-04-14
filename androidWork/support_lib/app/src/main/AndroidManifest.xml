@@ -9,14 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".fragment.MainActivity"></activity>
-        <activity android:name=".fragment.exam.ExamFragmentActivity">
+        <activity android:name=".fragment.FragmentTestMain2"></activity>
+        <activity android:name=".fragment.exam.ExamFragmentActivity" />
+        <activity android:name=".fragment.MainActivity" />
+        <activity android:name=".viewpager.ViewPagerTest"></activity>
+        <activity android:name=".viewpager.exam.ExamFragmentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC27yFbGJbB84s2fiWJzdVu75DR_W7fcGk" />
     </application>
 
 </manifest>

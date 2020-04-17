@@ -9,16 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".tab.TabTest2"/>
-        <activity android:name=".appbar.AppbarTest"></activity>
+        <activity android:name=".recycler.SimpleRecyclerTest"></activity>
+        <activity android:name=".cardview.CardViewTest" />
+        <activity android:name=".appbar.AppbarTest" />
+        <activity android:name=".tab.TabTest2" />
+        <activity android:name=".drawer.DrawerTest" />
         <activity android:name=".actionbar.ActionBarNavi" />
         <activity android:name=".actionbar.SubActivity" />
         <activity android:name=".toolbar.ToolbarTest" />
         <activity android:name=".actionbar.ActionBarTest" />
         <activity android:name=".menu.OptionMenuTest" />
         <activity android:name=".tab.TabTest" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".exam.ExamFragmentActivity">
+        <activity android:name=".exam.ExamFragmentActivity" />
+        <activity android:name=".circleexam.CircleImageRecyclerTest">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

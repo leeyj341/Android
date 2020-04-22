@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".HandlerExam">
+    android:orientation="vertical">
     <TextView
         android:id="@+id/text_msg"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:layout_margin="30dp"
+        android:gravity="center_horizontal"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:background="@color/colorAccent"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="changeNumber"
+        android:onClick="btn_click"
         android:text="숫자 출력하기" />
 </LinearLayout>

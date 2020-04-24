@@ -1,4 +1,4 @@
-# Android 연습
+# :iphone:Android 연습
 
 ## [DB 연동](./androidWork/DataManagermentPro/app/src/main/java/multi/android/datamanagermentpro)
 
